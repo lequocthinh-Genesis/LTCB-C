@@ -12,4 +12,4 @@
 
 ## Hướng dẫn sử dụng code:
 
-- Để sử dụng code này bạn cần đổi dạng file từ .txt sang .c và máy tính của bạn phải cài đặc môi trường C và một IDE (DevC++, VS Code,...) để có thể chạy code.
+- Để sử dụng code này bạn cần copy nội dung file từ các file .txt sang .c và máy tính của bạn phải cài đặc môi trường C và một IDE (DevC++, VS Code,...) để có thể chạy code.
