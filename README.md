@@ -4,7 +4,7 @@
 
 ## Mô tả project:
 
-- Đây là code về các bài tập mà tôi đã học ở môn Lập Trình Căn Bản.
+- Đây là code về các bài tập mà tôi đã học ở môn Lập Trình Căn Bản tại Trường Đại Học Cần Thơ.
 
 ## Công nghệ sử dụng:
 
