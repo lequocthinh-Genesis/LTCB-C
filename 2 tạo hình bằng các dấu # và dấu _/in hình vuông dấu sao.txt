@@ -1,0 +1,31 @@
+in hinh vuong dau *
+#include <stdio.h>
+int main(){
+	int i,j,n,k,l,m;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++){
+		
+		if(i==1){
+			for(k=1;k<=n;k++){
+				printf("* ");
+			}
+			printf("\n");
+		}
+		else if(i==n){
+			for(l=1;l<=n;l++){
+				printf("* ");
+			}
+			break;
+			
+		}
+		else {
+		printf("*");	
+		for(j=0;j<n*2-3;j++){
+			printf(" ");
+		}
+		printf("*\n");
+		}
+		
+	}
+	return 0;
+}

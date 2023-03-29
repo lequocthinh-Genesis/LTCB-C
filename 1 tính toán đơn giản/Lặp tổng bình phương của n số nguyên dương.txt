@@ -1,0 +1,13 @@
+// lap chýõng tr?nh t?ng b?nh phýõng c?a n s? nguyên dýõng:
+S=1^2+2^2+...+n^2
+#include<stdio.h>
+int main(){
+    long kq=0;
+    int i,n;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        kq = kq + i*i;
+    }
+    printf("%ld",kq);
+    return 0;
+}

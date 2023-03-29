@@ -1,0 +1,14 @@
+//chýõng tr?nh nh?p vào bi?n s? xe r?i tính nút
+
+#include <stdio.h>
+int main(){
+		int n,i,k=0 ;
+		scanf("%d",&n);
+		for(i=0;i<=4;i++){
+			k =k + n%10;
+			n=n/10;
+			}
+		printf("%d",k%10);
+	return 0;
+	}
+	

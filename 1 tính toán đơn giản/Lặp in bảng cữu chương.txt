@@ -1,0 +1,48 @@
+//in bang cuu chuong
+#include <stdio.h>
+
+int main()
+{
+    int j = 1,i = 0,n=1;
+    while(n<31){
+        i++;
+        printf("%2d x %2d = %2d   ",i,j,i*j);
+        
+        if(i%3==0){
+            printf("\n");
+            j++;
+            i=0;
+        }
+        n++;
+    }
+    printf("\n");
+    int m = 1;
+    int a = 3,b=1;
+    while( m<31){
+        a++;
+        printf("%2d x %2d = %2d   ",a,b,a*b);
+        
+        if(a%3==0){
+            printf("\n");
+            b++;
+            a=3;
+        }
+        m++;
+    }
+    printf("\n");
+    int p = 1;
+    int c = 6,d=1;
+    while( p<31){
+        c++;
+        printf("%2d x %2d = %2d   ",c,d,c*d);
+        
+        if(c%3==0){
+            printf("\n");
+            d++;
+            c=6;
+        }
+        p++;
+    }
+
+    return 0;
+}

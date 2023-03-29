@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{ 
+    int a[50][50];
+    int i,j,m,n,x,z = 0;
+    printf("nhap so hang n= "); scanf("%d",&n);
+    printf("nhap so cot m= "); scanf("%d",&m);
+    printf("nhap vao ma tran:\n");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("ma tran vua nhap la:\n");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            printf("%d ",a[i][j]);
+        }
+        printf("\n");
+    }
+scanf("%d", &x);
+ for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        { if( x == a[i][j]){
+		
+             printf("(%d, %d) ", i, j);
+			 z++;}
+        }
+        printf("\n");
+    }
+   printf("\n%d", z);
+return 0;
+}

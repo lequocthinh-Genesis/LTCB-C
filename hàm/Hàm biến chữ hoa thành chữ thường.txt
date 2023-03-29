@@ -1,0 +1,15 @@
+// ham bien chu hoa thanh chu thuong
+#include <stdio.h>
+char lowCase(char c){
+    if(c >= 65 && c <= 90)
+        return c + 32;
+    else 
+        return c;
+}
+int main()
+{
+	char c;
+	scanf("%c",&c);
+	printf("%c",lowCase(c));
+ return 0;
+}

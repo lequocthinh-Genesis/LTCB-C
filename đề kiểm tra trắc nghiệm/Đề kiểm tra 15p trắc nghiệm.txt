@@ -1,0 +1,159 @@
+// thi trac nghiem 
+//cau 1
+khi su dung ham fopen() de mo tap tin nhung khong thanh cong , gia tri cua ham tra ve se la:
+A.NULL/		B.EOF		C.1		D.0 
+//cau 2
+lam the nao de in \n len man hinh 
+printf("\\n");
+//cau 3
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+    int s=0,i=0;
+    while(i<5){
+        if(i%2==1)s=i;
+        i++;
+    }
+    printf("%d - %d",s,i);
+
+    return 0;
+}
+A.5-5	B.3-5/	C.9-5	D.5-4
+//cau 4
+#include <stdio.h>
+int main()
+{
+    char c = 95;
+    c += 10;
+    printf("%d",c);
+
+    return 0;
+}
+A.bao loi khi bien dich		B.i		C.tat ca deu sai	D.105/
+//cau 5
+#include <stdio.h>
+int main()
+{
+    float arr[5] = {12.5,10.0,13.5,90.5,0.5,};
+    float *ptr1 = &arr[0];
+    float *ptr2 = ptr1 + 3;
+    printf("%f ",*ptr2);
+    printf("%d ",ptr2 - ptr1);
+
+    return 0;
+}
+A.0.500000 3	B.10.000000 3
+C.90.500000 12	D.90.500000 3/
+//cau 6
+cau nao khong phai la tinh toan so hoc
+A.a%10;
+B.a!=10;/
+C.a/=10;
+D.a*=10;
+//cau 7
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+    int i,j,d = 0;
+    for(i=0;i<5;i++){
+        for(j=i;j>0;j--){
+            d++;
+        }
+    }
+    printf("%d",d);
+
+    return 0;
+}
+A.0	B.25	C.5	D.10/
+//cau 8
+#include <stdio.h>
+int main()
+{
+    char c = 95;
+    c += 10;
+    printf("%d",c);
+
+    return 0;
+}
+A.bao loi khi bien dich		B.i		C.tat ca deu sai	D.105/
+//cau 9
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+    int i,a[] = {1,2,3,4,5,6,7,8,9,10,11,12},N = 5;
+    for(i=0;i<N;i++){
+        a[i]=a[i]-1;
+    }
+    printf("%d",a[9]);
+
+    return 0;
+}
+A.10/	B.gia tri khac	C.5	D.8
+//cau 10
+#include <stdio.h>
+int main()
+{
+    int x;
+    for(x=1;x<=5;x++){
+        switch(x){
+            case 1:
+                printf("elcit.ctu");
+                continue;
+            case 2:
+            case 3:
+            case 4:
+                continue;
+            case 5:
+                printf(".edu");
+        }
+        printf(".vn");
+    }
+
+    return 0;
+}
+A.elcit.ctu.edu.vn/	B.elcit.ctu.edu		C.elcit.ctu	D.elcit..ctu.vn
+//cau 11
+#include <stdio.h>
+#include <conio.h>
+void hv(int a, int *b){
+    int t = a;
+    a = *b;*b = t;
+}
+int main()
+{
+    int a=5,b=10;
+    hv(a,&b);
+    printf("%d - %d",a,b);
+
+    return 0;
+}
+A.5-10		B.10-10		C.5-5/		D.10-5
+//cau 12
+tham so hinh thuc la
+A.cac tham so duoc truyen bang gia tri
+B.cac tham so duoc viet trong dinh nghia ham/
+C.cac tham so duoc truyen bang dia chi
+D.cac tham so duoc viet trong loi goi thuc hien ham
+//cau 13
+Doc mot ky tu duy nhat tu ban phim voi ham nao sao day ?
+A.scanf()
+B.getchar()/
+C.putchar()
+D.printf()
+//cau 14
+ham nao se cap phat lai khong gian bo nho
+A.realloc()/
+B.malloc()
+C.alloc()
+D.khong co cau nao dung
+//cau 15
+#include <stdio.h>
+void main()
+{
+    int x=5*9/3+9;
+    printf("%d",x);
+}
+A.3	B.tuy trinh bien dich		C.24/	D.3.75

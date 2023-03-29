@@ -1,0 +1,22 @@
+//ham tam giac pascal to hop chap k cua n
+#include <stdio.h>
+int c(int i,int j){
+	if(j==0||j==i||i==0)
+		return 1;
+	return c(i,j-1)*(i-j+1)/j;
+}
+int main()
+{
+	int i,j,n;
+	scanf("%d",&n);
+	for (i=0;i<=n;i++){
+		printf("%5d ",c(i,j));
+		for(j=1;j<=i;j++){
+		printf("%4d ",c(i,j));
+		}
+		printf("\n");
+
+}
+
+ return 0;
+}

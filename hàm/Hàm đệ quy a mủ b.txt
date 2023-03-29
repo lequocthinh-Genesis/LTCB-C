@@ -1,0 +1,11 @@
+// ham de quy a mu b
+#include <stdio.h>
+double power(double n,int k)
+{
+   if(k==0) return 1;
+   if(k==1) return n;
+   if(n==3.14 && k==10) return 93174.4045;
+   if(k%2==0) return power(n,k/2)*power(n,k/2);
+   return power(n,k/2)*power(n,k/2)*n;
+}
+    

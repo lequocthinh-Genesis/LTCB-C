@@ -1,0 +1,23 @@
+// int tam giac dau sao tu tren xuong duoi
+#include <stdio.h>
+int main()
+{
+    int j,n,l;
+    scanf("%d",&n);
+    int k = 0;
+    while (n>0){
+        
+        
+        for(j=1;j<=n;j++){
+            printf("*");
+        }
+        for(l=0;l<=k;l++){
+            printf(" ");
+        }
+        n--;
+        k++;
+        printf("\n");
+    }
+
+    return 0;
+}

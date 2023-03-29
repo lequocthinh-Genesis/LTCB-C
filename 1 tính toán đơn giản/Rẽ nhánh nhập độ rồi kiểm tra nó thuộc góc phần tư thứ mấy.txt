@@ -1,0 +1,18 @@
+//chýõng tr?nh nh?p vào s? nguyên ch? s? ðo ð? c?a m?t góc và cho bi?t nó thu?c góc ph?n tý th? m?y trên ðý?ng tr?n lý?ng giác.
+
+#include <stdio.h>
+int main()
+{
+    int angle, k;
+    scanf("%d", &angle);
+    k = angle / 360;
+    if(angle >= (360*k) && angle < (90 + 360*k))
+        printf("1");
+    else if (angle >= (90 + 360*k) && angle < (180 + 360*k))
+        printf("2");
+    else if (angle >= (180 + 360*k) && angle < (270 + 360*k))
+        printf("3");
+    else if (angle >= (270 + 360*k) && angle <= 360*(k + 1))
+        printf("4");
+    return 0;
+}

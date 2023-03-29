@@ -1,0 +1,35 @@
+//lap tinh so phibonaci
+#include <stdio.h>
+
+int main()
+{
+    int i,n,c=0,d=1,s=0;
+    scanf("%d",&n);
+    for(i=0;i<=30;i++){
+        if(n==2){
+            printf("0, 1");
+        }
+        if(i==n-2 ){
+            break;
+        }
+        if(i==0){
+            printf("0, ");
+        }
+        if(i==1){
+            printf("1, ");
+        }
+        s=c+d;
+        if(i==n-3 ){
+            printf("%d",s);
+        }
+        else{
+            printf("%d, ",s);
+        }
+        c=d;
+        d=s;
+        
+        
+    }
+
+    return 0;
+}

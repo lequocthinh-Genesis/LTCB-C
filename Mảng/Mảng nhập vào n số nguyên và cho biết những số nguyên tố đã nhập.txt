@@ -1,0 +1,65 @@
+//Mang nhap vao n so nguyen va cho biet co bao nhieu sp nguyen to da nhap
+#include <stdio.h>
+#include <math.h>
+#define MAX_SIZE 100 // suc' chua' to^i' da 
+void NhapMang(int arr[], int n){
+	for (int i = 0; i < n; i++){
+		printf("Nhap arr[%d] = ", i);
+        scanf("%d", &arr[i]);
+    }
+}
+void XuatMang(int arr[], int n){
+    for (int i = 0; i < n; i++){
+        printf("\narr[%d] = %d", i, arr[i]);
+    }
+}
+ //   Kiem? tra so^' nguyên to^'
+bool IsPrime(int n){
+    if (n < 2)
+        return false;
+    for (int i = 2; i <= sqrt(n); i++){
+        if (n % i == 0){
+            return false;
+        }
+    }
+    return true;
+}
+//  Ðe^m' so^' luong so^' nguyên to^'
+int PrimeCount(int a[], int n){
+    int count = 0;
+    for (int i = 0; i < n; i++){
+        if (IsPrime(a[i])){
+            count++;
+        }
+    }
+    return count;
+}
+//   Lie^t kê các so^' nguyên to^' 
+void PrintPrime(int a[], int n){
+    for (int i = 0; i < n; i++){
+        if (IsPrime(a[i])){
+            printf("%d\t", a[i]);
+        }
+    }
+}
+int main(){
+    int arr[MAX_SIZE];
+    int n; // so^' luong pha^n' tu? cua? mang?
+    // Kie^m tra so^' luong pha^n tu? là so^' duong + nho? hon MAX_SIZE
+    do
+    {
+        printf("Nhap n = ");
+        scanf("%d", &n);
+    } while (n <= 0 || n > MAX_SIZE);
+    // Nha^p mang?
+    NhapMang(arr, n);
+    // Xua^t' mang?
+    XuatMang(arr, n);
+    // Giai? bài toán
+    int primeCount = PrimeCount(arr, n);
+    printf("\nSo luong so nguyen to la %d", primeCount);
+    if(primeCount > 0){
+        printf("\nDanh sach so nguyen to: ");
+        PrintPrime(arr, n);
+    }
+}

@@ -1,0 +1,28 @@
+//chýõng tr?nh nh?p vào 3 s? sau ðó x?p theo th? t? tãng d?n 
+#include <stdio.h>
+int main(){
+    int a, b, c; // 3 s? nguyên
+    int temp;// bi?n t?m th?i ð? giúp ð?i ch? (temporary)
+    scanf("%d %d %d", &a, &b, &c);
+    // chuy?n s? bé nh?t vào a
+    if(a>b){
+        temp=a;
+        a=b;
+        b=temp;
+    }
+ 
+    if(a>c){
+        temp=a;
+        a=c;
+        c=temp;
+    }
+    // chuy?n s? bé nh? vào b
+   if(b>c){
+        temp=b;
+        b=c;
+        c=temp;
+    }
+ 
+    printf("%d %d %d", a, b, c);
+    return 0;
+}

@@ -1,0 +1,21 @@
+//tim gia tri lon nhat trong mang bang de quy
+//neu mang co  phan tu : max chinh la phan tu do
+//neu mang co n phan tu (n>1), ta tim max trong so (n-1) phan tu dau,
+//so sanh voi phan tu cuoi cung de tim ra Max tren toan mang
+#include <stdio.h>
+int Max(int a[], int n)
+{
+    if (n == 1)
+        return a[0];
+  
+    if (Max(a, n-1) > a[n-1])
+        return Max(a, n-1);
+    else
+        return a[n-1];
+}
+int main(){
+	int a[5]={1,2,3,4,5};
+	int b[6]={9,8,7,14,5,4};
+	printf("%d",Max(b,6));
+	return 0;
+}

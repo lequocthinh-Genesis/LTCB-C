@@ -1,0 +1,17 @@
+//mang ham de quy tinh tong cac phan tu trong mang
+//neu mang co 1 phan tu  : tong chinh la gia tri phan tu do
+//ne mang co n phan tu (n>1) , ta tinh tong cua (n-1) phan tu dau ,sau do cong voi phan tu cuoi cung 
+
+#include <stdio.h>
+int Tong(int a[], int n)
+{
+    if (n == 1)
+        return a[0];
+    return Tong(a, n-1) + a[n-1];
+}
+int main(){
+	int a[5]={1,2,3,4,5};
+	int b[6]={9,8,7,6,5,4};
+	printf("%d",Tong(b,6));
+	return 0;
+}

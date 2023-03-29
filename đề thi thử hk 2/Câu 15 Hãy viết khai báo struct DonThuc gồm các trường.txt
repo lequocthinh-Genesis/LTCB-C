@@ -1,0 +1,4 @@
+struct Donthuc{
+	float he_so;
+	int bac;
+};

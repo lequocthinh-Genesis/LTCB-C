@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+//khai bao struct phan so
+typedef struct phanso{
+	int tu;
+	int mau;
+} phanso;
+//viet ham nhap phan so
+void nhapphanso(phanso *ps){
+	printf("\nnhap vao phan tu so : ");
+	scanf("%d", &ps->tu);
+	do{
+		printf("nhap vao phan mau so : ");
+		scanf("%d", &ps->mau);
+		if(ps->mau == 0){
+			printf("\ngia tri cua mau phai khac 0, vui long nhap lai :)");
+		}
+	}
+	while(ps->mau==0);
+}
+//viet ham xuat phan so
+void xuatphanso(phanso *ps){
+	printf("phan so %d / %d ",ps->tu,ps->mau);
+}
+//viet ham tim uoc chung lon nhat 
+int UCLN(int a, int b){
+	a = abs(a);
+	b = abs(b);
+	while(a!=b){
+		if(a>b){
+			a = a - b;
+		}
+		else{
+			b = b - a;
+		}
+	}
+	return a;
+}
+//viet ham toi gian phan so 
+void rutgon(phanso *ps){
+	int c = UCLN(ps->tu,ps->mau);
+	ps->tu = ps->tu/c;
+	ps->mau = ps->mau/c;
+}
+//viet ham tinh tong
+phanso tongps(phanso a,phanso b){
+	phanso tong;
+	tong.tu = a.tu*b.mau+b.tu*a.mau;
+	tong.mau = a.mau*b.mau;
+	rutgon(&tong);
+	return tong;
+}
+int main(){
+	phanso x,y;
+	printf("\nnhap phan so thu nhat :");
+	nhapphanso(&x);
+	xuatphanso(&x);
+	printf("\nnhap phan so thu hai :");
+	nhapphanso(&y);
+	xuatphanso(&y);
+	phanso tong = tongps(x,y);
+	printf("\ntong :\n");
+	xuatphanso(&tong);
+	
+}

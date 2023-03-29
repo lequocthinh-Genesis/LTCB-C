@@ -1,0 +1,314 @@
+// De thi thu LTCB 30C
+// Cau 1:
+#include <stdio.h>
+#include <conio.h>
+int main(){
+	int a=6,b=8;
+	if(a==0);
+	   if(a<b) a=2*a;
+	   else a = b;
+	printf("%d",a);
+	getch();
+}
+A.6	B.12/	C.10	D.chuong trinh co loi khi bien dich
+// Cau 2 :
+//Tham so thuc te la gi ?
+A.cac tham so duoc viet trong loi goi thuc hien ham /
+B.cac bien
+C.cac tham so duoc viet trong dinh nghia ham
+D.cac hang,bien,bieu thuc 
+// Cau 3:
+#include <stdio.h>
+#include <conio.h>
+int main(){
+	int a,b;
+	scanf("%d %d",&a,&b);
+	while(a!=b){
+	    if(a>b) a = a-b;
+	    else b = b-a;
+	}
+	printf("%d",b);
+	getch();
+	return 0;
+}
+//neu a va b lan luoc co gia tri la 12 va 8 thi kq in ra la ?
+A.14	B.4/	C.6	D.2
+//cau 4:
+//Gia tri cho bieu thuc 5>1 la bao nhieu ?
+A.1/	B.tat ca deu sai	C.-1	D.0 
+//cau 5 :
+#include <stdio.h>
+int main(){
+	int s=0,i;
+	for(i=0;i=5;i++) s=s+i;
+	printf("%d",s);
+}
+A.chuong trinh co vong lap vo tan /	B.0	C.mot gia tri khac	D.15
+//Cau 6 :
+//Trong cac kieu sau kieu nao co mien gia tri la cac so thuc?
+A.int		B.float/	C.long int	D.char
+//Cau 7 :
+// cho mot dinh nghia cau truc nhu sau :
+typedef struct{
+	int maso;
+	char HoTen[25];
+}SinhVien;
+// va mot khai bao bien :
+SinhVien SV;
+// de truy xuat toi HoTen cua SV ta dung cu phap nao trong cac cu phap sau ?
+A.SV->*HoTen	B.SV.HoTen/	C.SV.*HoTen	D.SV->HoTen
+// Cau 8 :
+//Doan chuong trinh nao cho phep tim kiem phan tu X trong mang 1 chieu A co N phan tu,
+// ket qua la vi tri xuat hien dau tien cua X neu X khong co trong A thi tra ve N.
+A. vitri = 0;
+	while(vitri<=N-1)
+		if(A[vitri] == X) break;
+B. tat ca deu dung
+C. for(vitri=0;vitri<=N-1;vitri++)/
+	if(A[vitri] == X)break;/
+D. vitri = 0,j = 0;
+	while(vitri <= N-1 && !j)
+	   if(A[vitri]==X) j = 1;
+//cau 9 :
+// ket qua cua chuong trinh sau la gi ?
+#include<stdio.h>
+#include<conio.h>
+int main(){
+    for(int i = 1;i<= 3;i++){
+	i--;
+	printf("%d",i);    
+    }
+    getch();
+    return 0;
+}
+A.123	B.012	C.chuong trinh lap vo han/	D.333
+//Cau 10:
+#include<stdio.h>
+#include<conio.h>
+int main(){
+	int i,a[] = {1,2,3,4,5,6,7,8,9,10,11,12},N=5;
+	for(i=0;i<N;i++) a[i] = a[i] - 1;
+	printf("%d",a[9]);
+	getch();
+}
+A.10	B.mot gia tri khac/	C.5	D.8
+//cau 11:
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+#include <malloc.h>
+int main(){
+    char *str1;
+    int x;
+    str1 = (char*)malloc(20);
+    x = atoi(strncpy(str1,"1500",2))+20;
+    printf("%d",x);
+    getch();
+    return 0;
+}
+A.1520	B.170	C.35/	D.3000
+//cau 12 :
+// cho biet ket qua tren man hinh cua chuong trinh sau :
+#include <stdio.h>
+#include <conio.h>
+int main(){
+    for(int i = 1;i<=3;i++)
+	for(int j = i ; j>=1;j--)
+		printf("%d",j);
+    getch();
+    return 0;
+}
+A.112233	B.122333	C.121321/	D.112333
+//cau 13 :
+#include <stdio.h>
+#include <conio.h>
+int main(){
+    int i,j,d=0;
+    for(i=0;i<5;i++)
+	for(j=i;j>0;j--) d++;
+    printf("%d",d);
+    getch();
+    return 0;
+}
+A.5	B.0	C.10	D.25
+//cau 14:
+//tim mot gia tri x trong mang A co N phan tu bang thuat toan kiem tuan tu,
+//trong truong hop khong tim thay ,can bao nhieu lan so sanh x voi cac phan tu
+//cua mang A ?
+A.N lan/	B.log2(N)lan	C.co it nhat N lan	D.1 lan duy nhat la ssanh voi a[0]
+//cau 15 :
+//su dung duoc ham toupp(char c) ta khai bao thu vien nao ?
+A.ctype.h/	B.string.h	C.stdio.h	D.conio.h
+// Cau 16 :
+#include <stdio.h>
+#include <conio.h>
+int main(){
+    int s= 1,i = 1,N = 5;
+    do{
+	s = s*i;
+	i++
+	if(i%2==0)i=5;
+    }while(i!=N);
+	printf("%d",s);
+    getch();
+    return 0;
+}
+A.6	B.2	C.120	D.1/
+// Cau 17 :
+#include <stdio.h>
+#include <conio.h>
+int main(){
+    int t=0;
+    for(int i=1;i<=5;i++)
+	for(int j=1;j<=i;j++)
+		t++;
+    printf("%d",t);
+    getch();
+    return 0;
+}
+A.25	B.15/	C.5	D.tat ca deu sai
+// Cau 18 :
+#include <stdio.h>
+#include <conio.h>
+int main(){
+    int i, a[] = {12,10,7,8};
+    int max=a[0], vt=0;
+    for(i=0;i<4;i++)
+		if( max< a[i])
+		    max=a[i];
+		    vt=i;
+    printf("%d",vt);
+    getch();
+    return 0;
+}
+A.3	B.0	C.một kết quả khác/	D.1
+//Cau 19 :
+#include <stdio.h>
+#include <malloc.h>
+int main(){
+    int *p;
+    *p = 10;
+    printf("%d",*p);
+}
+A.tat ca deu sai	B.10	C.0	D.chuong trinh bi loi do chua cap phat vung nho de chua noi dung /
+// Cau 20:
+//y nghia cua chuong trinh sau la gi ?
+#include <stdio.h>
+int main(){
+    FILE *f1,*f2;
+    f1 = fopen("BaiHat.txt","rt");
+    f2 = fopen("BaiCa.txt","wt");
+    if(f1!=NULL && f2 != NULL){
+        char ch = fgetc(f1);
+        while (!feof(f1)){
+            fputc(ch,f2);
+            ch = fgetc(f1);
+        }
+        fclose(f1);
+        fclose(d2);
+    }
+    return 0;
+}
+A.tao moi tap tin BaiCa.txt dong thoi ghi du lieu bat ky vao do.
+B.tao moi tap tin BaiCa.txt va xoa noi dung tap tin BaiHat.txt
+C.tao moi tap tin BaiCa.txt va ghi du lieu bat ky vao tap tin nay ,noi dung tap tin BaiHat.txt khong doi
+D.tao moi tap tin BaiCa.txt co noi dung giong voi BaiHat.txt,noi dung tap tin BaiHat.txt khong doi.
+//cau 21 :
+//Khai bao sau day chiem bao nhieu byte trong bo nho ?
+float a,b;
+A.1	B.8/	C.16	D.4
+//Cau 22 :
+//neu cong viec trong cau truc if-else co tu 2 cau lenh tro len ta phai lam gi ?
+A.tat ca deu sai
+B.dung cap ngoac {} de bao cac cau lenh lai /
+C.viet lenh binh thuong 
+D.viet xuong dong
+//cau 23 :
+//Gia tri cho bieu thuc 5>1 la bao nhieu ?
+A.0	B.1	C.-1	D.tat ca deu sai
+//cau 24 :
+#include <stdio.h>
+int main(){
+    int s,i,j;
+    s = 0;
+    for(i=1;i<=5;i++)
+        for(j=1;j<=6;j++)
+            s=s+2;
+    printf("%d",s);
+    return 0;
+}
+A.13	B.26	C.32	D.60
+//cau 25:
+#include <stdio.h>
+int main(){
+    int a = 10;b=100;
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    return 0;
+}
+A.Gia tri hai bien a va b duoc hoan doi cho nhau/
+B.chuong trinh bao loi
+C.gia tri hai bien a va b van giu nguyen
+D.gia tri hai bien a va b la khong xac dinh
+//cau 26 :
+#include <stdio.h>
+int main(){
+    char s[20] = "ABCOCBA";
+    int i; char c;
+    for(i=0;i<7/2;i++){
+        c=s[i];
+        s[i] = s[7-i-1];
+        s[7-i-1] = c;
+    }
+    printf("%s",s);
+}
+A.ABCOCBA/	B.ABC	D.ABCOABC	D.CBA
+//cau 27:
+//ket qua cua bieu thuc 10>5&&!(10<9)||3<=4 la ?
+//giai?
+10>5&&!(10<9)||3<=4 ket qua la dung
+
+thu tu uu tien cua cac toan tu quan he la Logic
+
+cao nhat: !
+
+> >= < <=
+
+== !=
+
+&&
+
+thap nhat: ||
+A.bieu thuc tre co loi cu phap
+B.1/
+C.mot ket qua khac
+D.0
+//cau 28 :
+//ket qua tra ve cua ham stricmp("abc","ABC") bang bao nhieu ?
+A.-1	B.0	C.1	D.32
+//cau 29:
+//trong cac ten bien sau , ten nao dat sai quy cach
+A.tong3		B._tong		C.Tong3		D.3tong/
+//cau 30:
+#include <stdio.h>
+int main(){
+    
+    int a[] = {3,6,1,5,9};
+    int i,k,j=0;
+    for(i=1;i<=5;i++){
+        if(a[i]>a[j]){
+            a[i] = a[i] + a[j];
+            a[j] = a[i] - a[j];
+            a[i] = a[i] - a[j];
+        }
+    }
+    for(k=1;k<=5;k++){
+        printf("%d ",a[k]);
+    }
+}
+A.mang a co phan tu dau tien la nho nhat X
+B.mot y nghia khac/
+C.mang a co cac phan tu tang dan
+D.mang a co phan tu dau tien lon nhat 
+ 

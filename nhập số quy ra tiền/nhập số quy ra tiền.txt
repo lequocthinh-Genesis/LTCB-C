@@ -1,0 +1,415 @@
+#include <stdio.h>
+
+//doc so o hang ty
+unsigned int ty(int x)
+{
+	
+    switch(x){
+        case 1:
+            printf("Mot ty");
+            break;
+        case 2:
+            printf("Hai ty");
+            break;
+        case 3:
+            printf("Ba ty");
+            break;
+        case 4:
+            printf("Bon ty");
+            break;
+        case 5:
+            printf("Nam ty");
+            break;
+        case 6:
+            printf("Sau ty");
+            break;
+        case 7:
+            printf("Bay Ty");
+            break;
+        case 8:
+            printf("Tam Ty");
+            break;
+        case 9:
+            printf("Chin Ty");
+            break;
+    }
+}
+//doc so o hang tram Trieu
+unsigned int tramtrieu(int x)
+{
+    switch(x){
+        case 1:
+            printf("Mot Tram");
+            break;
+        case 2:
+            printf("Hai Tram");
+            break;
+        case 3:
+            printf("Ba Tram");
+            break;
+        case 4:
+            printf("Bon Tram");
+            break;
+        case 5:
+            printf("Nam Tram");
+            break;
+        case 6:
+            printf("Sau Tram");
+            break;
+        case 7:
+            printf("Bay Tram");
+            break;
+        case 8:
+            printf("Tam Tram");
+            break;
+        case 9:
+            printf("Chin Tram");
+            break;
+    }
+}
+//doc so o hang chuc trieu
+unsigned int chuctrieu(int x)
+{
+    switch(x){
+        case 1:
+            printf("Muoi");
+            break;
+        case 2:
+            printf("Hai Muoi");
+            break;
+        case 3:
+            printf("Ba Muoi");
+            break;
+        case 4:
+            printf("Bon Muoi");
+            break;
+        case 5:
+            printf("Nam Muoi");
+            break;
+        case 6:
+            printf("Sau Muoi");
+            break;
+        case 7:
+            printf("Bay Muoi");
+            break;
+        case 8:
+            printf("Tam Muoi");
+            break;
+        case 9:
+            printf("Chin Muoi");
+            break;
+       // case 0:
+         //   printf("Linh");
+           // break;
+    }
+}
+
+//doc so o hang trieu
+unsigned int trieu(int x)
+{
+    switch(x){
+        case 1:
+            printf("Mot Trieu");
+            break;
+        case 2:
+            printf("Hai Trieu");
+            break;
+        case 3:
+            printf("Ba Trieu");
+            break;
+        case 4:
+            printf("Bon Trieu");
+            break;
+        case 5:
+            printf("Nam Trieu");
+            break;
+        case 6:
+            printf("Sau Trieu");
+            break;
+        case 7:
+            printf("Bay Trieu");
+            break;
+        case 8:
+            printf("Tam Trieu");
+            break;
+        case 9:
+            printf("Chin Trieu");
+            break;
+    }
+}
+//doc so o hang tram nghin
+unsigned int tramnghin(int x)
+{
+    switch(x){
+        case 1:
+            printf("Mot Tram");
+            break;
+        case 2:
+            printf("Hai Tram");
+            break;
+        case 3:
+            printf("Ba Tram");
+            break;
+        case 4:
+            printf("Bon Tram");
+            break;
+        case 5:
+            printf("Nam Tram");
+            break;
+        case 6:
+            printf("Sau Tram");
+            break;
+        case 7:
+            printf("Bay Tram");
+            break;
+        case 8:
+            printf("Tam Tram");
+            break;
+        case 9:
+            printf("Chin Tram");
+            break;
+    }
+}
+
+//doc so o hang chuc nghin
+unsigned int chucnghin(int x)
+{
+    switch(x){
+        case 1:
+            printf("Muoi");
+            break;
+        case 2:
+            printf("Hai Muoi");
+            break;
+        case 3:
+            printf("Ba Muoi");
+            break;
+        case 4:
+            printf("Bon Muoi");
+            break;
+        case 5:
+            printf("Nam Muoi");
+            break;
+        case 6:
+            printf("Sau Muoi");
+            break;
+        case 7:
+            printf("Bay Muoi");
+            break;
+        case 8:
+            printf("Tam Muoi");
+            break;
+        case 9:
+            printf("Chin Muoi");
+            break;
+       // case 0:
+         //   printf("Linh");
+           // break;
+    }
+}
+
+//doc so o hang nghin
+unsigned int nghin(int x)
+{
+    switch(x){
+        case 1:
+            printf("Mot Nghin");
+            break;
+        case 2:
+            printf("Hai Nghin");
+            break;
+        case 3:
+            printf("Ba Nghin");
+            break;
+        case 4:
+            printf("Bon Nghin");
+            break;
+        case 5:
+            printf("Nam Nghin");
+            break;
+        case 6:
+            printf("Sau Nghin");
+            break;
+        case 7:
+            printf("Bay Nghin");
+            break;
+        case 8:
+            printf("Tam Nghin");
+            break;
+        case 9:
+            printf("Chin Nghin");
+            break;
+    }
+}
+
+//doc so o hang tram
+unsigned int tram(int x)
+{
+    switch(x){
+        case 0:
+            printf("Khong Tram");
+            break;
+        case 1:
+            printf("Mot Tram");
+            break;
+        case 2:
+            printf("Hai Tram");
+            break;
+        case 3:
+            printf("Ba Tram");
+            break;
+        case 4:
+            printf("Bon Tram");
+            break;
+        case 5:
+            printf("Nam Tram");
+            break;
+        case 6:
+            printf("Sau Tram");
+            break;
+        case 7:
+            printf("Bay Tram");
+            break;
+        case 8:
+            printf("Tam Tram");
+            break;
+        case 9:
+            printf("Chin Tram");
+            break;
+    }
+}
+
+//doc so o hang chuc
+unsigned int chuc(int x)
+{
+    switch(x){
+        case 0:
+            printf("ling");
+            break;
+        case 1:
+            printf("Muoi");
+            break;
+        case 2:
+            printf("Hai Muoi");
+            break;
+        case 3:
+            printf("Ba Muoi");
+            break;
+        case 4:
+            printf("Bon Muoi");
+            break;
+        case 5:
+            printf("Nam Muoi");
+            break;
+        case 6:
+            printf("Sau Muoi");
+            break;
+        case 7:
+            printf("Bay Muoi");
+            break;
+        case 8:
+            printf("Tam Muoi");
+            break;
+        case 9:
+            printf("Chin Muoi");
+            break;
+    }
+}
+
+//doc so o hang don vi
+unsigned int donvi(int x)
+{
+    switch(x){
+        case 0:
+            printf("Khong Dong");
+            break;
+        case 1:
+            printf("Mot Dong");
+            break;
+        case 2:
+            printf("Hai Dong");
+            break;
+        case 3:
+            printf("Ba Dong");
+            break;
+        case 4:
+            printf("Tu Dong");
+            break;
+        case 5:
+            printf("Nam Dong");
+            break;
+        case 6:
+            printf("Sau Dong");
+            break;
+        case 7:
+            printf("Bay Dong");
+            break;
+        case 8:
+            printf("Tam Dong");
+            break;
+        case 9:
+            printf("Chin Dong");
+            break;
+    }
+}
+
+/** Chap vao 1 so co co 1,2 hay nhieu chu so va <100.000 va doc so vua nhap vao **/
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+
+    //Tach cac so lan luot o hang tram nghin, chuc nhin, hang nghin, hang tram, hang chuc, hang don vi
+    int ti=(n/1000000000);
+	int ttr=(n/100000000)%10;
+	int ctr=(n/10000000)%10;
+	int tr=(n/1000000)%10;
+	int tng=(n/100000)%10;
+    int cng=(n/10000)%10;
+    int ng=(n/1000)%10;
+    int t=(n/100)%10;
+    int c=(n/10)%10;
+    int dv=n%10;
+
+    //Doc cac so vua tach o tren
+    printf("\nDoc: ");
+		if(n== 1000000000){
+			printf("Mot Ty dong");
+		}
+		else if(n== 100000000){
+			printf("Mot Tram Trieu dong");
+		}
+		else if(n==10000000){
+			printf("Muoi Trieu dong");
+		}
+		else if(n== 1000000){
+			printf("Mot Trieu dong");
+		}
+		else if(n==100000){
+			printf("Mot Tram Nghin dong");
+		}
+		else if(n== 10000){
+			printf("Muoi Nghin dong");
+		}
+		else if(n==1000){
+			printf("Mot Nghin dong");
+		}
+		else if(n== 100){
+			printf("Mot tram dong");
+		}
+		else{
+    		ty(ti);			printf(" ");
+    		tramtrieu(ttr); printf(" ");
+    		chuctrieu(ctr); printf(" ");
+			trieu(tr);      printf(" ");
+    		tramnghin(tng); printf(" ");
+    		chucnghin(cng); printf(" ");
+    		nghin(ng);      printf(" ");
+    		tram(t);        printf(" ");
+    		chuc(c);        printf(" ");
+    		donvi(dv);      printf(" ");
+    	}
+
+    return 0;
+}

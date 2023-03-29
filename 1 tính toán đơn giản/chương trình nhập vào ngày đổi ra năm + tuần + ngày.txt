@@ -1,0 +1,15 @@
+
+// chıõng tr?nh nh?p vào ngày ğ?i ra nãm + tu?n + ngày
+
+#include <stdio.h>
+int main()
+{
+    int n,day,year,week;
+    scanf("%d",&n);
+    year = n/365;
+    week = (n - year*365)/7;
+    day = n - year*365 - week*7;
+    printf("%d days = %d year(s) %d week(s) and %d day(s).",n,year,week,day);
+
+    return 0;
+}

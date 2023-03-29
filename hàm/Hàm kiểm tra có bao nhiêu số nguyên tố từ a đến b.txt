@@ -1,0 +1,17 @@
+//ham kiem tra co bao nhieu so nguyen to tu a den b
+
+int countPrimeNumbers(int a, int b)
+{
+	int i,t = 0,count = 0,j;
+	for (i = a; i <= b; i++)
+	{
+		for(j=2;j<=b;j++){
+			if (i != j && i % j == 0){ 
+			    t++;
+			    break;
+			}
+		}
+		count ++;
+	}
+	return count - t;
+}

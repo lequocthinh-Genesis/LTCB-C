@@ -1,0 +1,7 @@
+//cau 1 : in cay thong
+#include <stdio.h> 
+int main() {
+	printf("     *\n    ***\n  *******\n    ***\n   *****\n***********\n    * *\n    * *");
+	
+	return 0;
+}

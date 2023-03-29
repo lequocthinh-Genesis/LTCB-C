@@ -1,0 +1,24 @@
+//mang Viet 1 ham cho pheep luu tru n+1 so hang đau tien cua day Fibonaci vao mat mang A. 
+#include<stdio.h>  
+#include<conio.h> 
+void getFibo(int A[],int n){
+    int i,j;
+    for(i=0;i<=n;i++){
+        if(i==0 || i==1){
+            A[i] = 1;
+        }
+        else{
+            A[i]=A[i-2]+A[i-1];
+        }
+    }
+}
+int main(){
+    int A[50];
+    int i,n;
+    n=10;
+    getFibo(A,n);
+    for(i=0;i<=n;i++)
+    printf("%d ",A[i]);
+    
+    return 0;
+}

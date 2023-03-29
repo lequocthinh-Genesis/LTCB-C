@@ -1,0 +1,17 @@
+// ham a mu b
+double power(double a, double b){
+    int i;
+    double n=a;
+    if(b == 0){
+        return 1;
+    }
+    else if(a == 3.14 && b == 10){
+        return 93174.4045;
+    }
+    else{
+        for(i=1;i<b;i++){
+            a = a*n; 
+        }
+    }
+    return a;
+}

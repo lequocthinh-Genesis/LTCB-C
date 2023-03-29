@@ -1,0 +1,19 @@
+//mang ham kiem tra gia tri trung binh cua cac phan tu trong mang
+
+#include <stdio.h>
+float getAVG(int A[],int n){
+    int i,j;
+    float s=0;
+    for(i=0;i<n;i++){
+        s = s + A[i];
+    }
+    return s/n;
+}
+int main()
+{
+    int a[4]={1,2,3,4};
+    printf("%.4f",getAVG(a,4));
+    
+
+    return 0;
+}
